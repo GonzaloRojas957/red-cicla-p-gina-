@@ -1,0 +1,383 @@
+* {
+	padding: 0px;
+	margin: 0px;
+  }
+  
+.body{
+	background-color: #ebf7d0;
+  }
+  
+.header {
+	margin: auto;
+	width: 100%;
+  font-family: "Source Sans Pro", sans-serif;
+  background-color: #446a13;
+  position: fixed;
+  z-index: 100;
+  background-attachment: fixed;
+  }
+
+#btn-menu {
+  display: none;
+  }
+
+.header label {
+  display:none;
+  width: 30px;
+  height: 20px;
+  padding: 10px;
+  border-right: 1px solid #ebf7d0;
+  color: #ebf7d0;
+  font-size: 25px;
+  }
+  
+.header label:hover {
+  cursor: pointer;
+  background-color: #83bd19;
+  }
+
+ul, ol {
+	list-style: none;
+  }
+  
+.nav li a {
+	background-color: #446a13;
+	color:#ebf7d0;
+	text-decoration: none;
+	padding: 20px 40px;
+	display: block;
+  }
+  
+.nav li a:hover {
+	background-color: #83bd19;
+  }
+  
+.nav {
+  display: flex;
+  }
+
+  .nav > li {
+  flex-grow: 1;
+  border-right: 1px solid #ebf7d0;
+   
+  }
+  
+.nav li ul {
+	display: none;
+	position: absolute;
+	min-width: 230px;
+  }
+  
+.nav li:hover > ul {
+	display:block;
+  }
+  
+.nav li ul li {
+	position: relative;
+  }
+  
+.nav li ul li ul {
+	right: -230px;
+	top: 0px;
+  }
+
+@media (max-width:880px) {
+  .header label {
+  display:block;
+  }
+
+.nav {
+  position:absolute;
+  width: 100%;
+  margin-left: -100%;
+  }
+
+ul, ol {
+  flex-direction: column;
+  }
+
+.nav > li{
+  border-bottom: 1px solid #ebf7d0;
+  border-top: 1px solid #ebf7d0;
+  }
+
+#btn-menu:checked ~ .nav {
+  margin: 0;
+  }
+      
+  }
+  h2{
+    padding-top: 30px;
+    padding-bottom: 10px;
+  }
+
+  h5 {
+    width: 200px;
+    padding-top: 1px;
+    padding-bottom: 25px;
+    color: #446a13;
+    font-family: "Source Sans Pro";
+    justify-content: center;
+  }
+
+#noticias .contenedor {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+  }
+  
+#noticias article {
+	margin: 20px;
+  }
+  
+#noticias images {
+	width: 100%;
+	max-width: 280px;
+	width: 50px; 
+	height: 50px; 
+  }
+  
+#noticias h4{
+  text-align: center;
+  font-family: "Source Sans Pro",sans-serif;
+  color: #122102;
+  font-size: 12px;
+  line-height : 15px;
+  padding-top: 5px;
+  }
+  
+#noticias h2{
+  line-height: 50px;
+	text-align: center;
+	font-family:"Source Sans Pro",sans-serif;
+	color: #122102;
+  }
+  
+#noticias h3{
+	text-align: center;
+	font-family: "Source Sans Pro",sans-serif;
+	color: #83bd19;
+	line-height : 50px;
+  font-size: 19px;
+  padding-top: 1px;
+  cursor: pointer;
+  }
+
+ #noticias h5 {
+  display: flexbox;
+  text-align: left;
+  font-family: "Source Sans Pro",sans-serif;
+  color: #122102;
+  line-height : 20px;
+  font-size: 12px;
+  margin-top: 1rem;
+  }
+
+  .vermas a{
+    text-decoration: none;
+    color:#fff;
+    padding: 7px;
+    background-color:#58791c;
+    font-family: "Source Sans Pro", sans-serif;
+    line-height: 120px;
+}
+
+.vermas a:hover{
+	background-color:#83bd19;
+  color: #fff;
+}
+  
+  .icon-facebook {
+    color: #ebf7d0;
+    padding-right: 35px;
+    font-size: 30px;
+    padding-left: 14px;
+    text-decoration:none;
+}
+
+.icon-twitter {
+    color: #ebf7d0;
+    padding-right: 35px;
+    font-size: 30px;
+    padding-top: 30px;
+    padding-left: 14px;
+}
+.icon-youtube {
+    color: #ebf7d0;
+    padding-right: 26px;
+    font-size: 30px;
+    padding-top: 30px;
+    padding-left: 0px;
+}
+
+
+  footer{ /*
+  position: fixed; */
+  bottom: 0;
+  background-image: url(../proyecto-dise-o-desde-codigo/images/backgroundfooterfinal.png);
+}
+
+.footer-distributed{
+	background-color:  #446b12;
+	box-shadow: 0 1px 1px 0 #edf1ea;
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+	padding: 55px 50px;
+  margin-top: 80px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+  vertical-align: top;
+}
+
+.footer-distributed .footer-left{
+  width: 40%;
+  color:  #edf1ea;
+}
+
+.footer-distributed h3{
+	color:  #edf1ea;
+    font-family: "Source Sans Pro", sans-serif;
+}
+
+.footer-distributed h3 span{
+    background-color:  #446b12;
+}
+
+.footer-distributed .footer-links{
+	color:  #edf1ea;
+	margin: 20px 0 12px;
+  padding: 0;
+}
+
+.footer-links ul li a{
+
+    text-decoration: none;
+    color: #fff;
+    font-family: "Source Sans Pro", sans-serif;
+    line-height: 30px;
+}
+
+.footer-distributed .footer-company-name{
+  background-color:  #567e15;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 8;
+}
+
+.footer-distributed .footer-center{
+	width: 35%;
+}
+
+.footer-center h3 {
+    line-height: 25px;
+    padding-bottom: 20px;
+}
+
+.footer-distributed .footer-center i{
+	color: #edf1ea;
+	font-size: 25px;
+	width: 38px;
+	height: 50px;
+	text-align: center;
+	line-height: 52px;
+	margin: 10px 15px;
+  vertical-align: middle;    
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+	font-size: 17px;
+  line-height: 38px;    
+}
+
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: #edf1ea;
+	vertical-align: middle;
+  margin: 0;  
+}
+
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+    line-height: 35px;
+}
+
+.footer-distributed .footer-center p a{
+	color:  #edf1ea;
+  text-decoration: none;  
+
+}
+
+.footer-distributed .footer-right{
+	width: 20%;
+}
+
+.footer-right h3 {
+    line-height: 25px;
+    padding-bottom: 20px;
+}
+
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	font-size: 13px;
+	font-weight: normal;
+    margin: 8px;
+    color:  #edf1ea;
+}
+
+.footer-distributed .footer-company-about span{
+	display: block;
+	color:  #edf1ea;
+	font-size: 15px;
+	font-weight: bold;
+	margin-bottom: 25px;
+}
+
+.footer-distributed .footer-icons{
+	margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	cursor: pointer;
+	border-radius: 2px;
+	font-size: 20px;
+	color: #edf1ea;
+	text-align: center;
+	line-height: 35px;
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+
+@media (max-width: 880px) {
+	.footer-distributed{
+	font: bold 14px sans-serif;
+}
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+        text-align: center;
+        flex-direction: column;
+	}
+
+	.footer-distributed .footer-center i{
+    margin-left: 0;
+  }
+  
+	.main {
+		line-height: normal;
+		font-size: auto;
+  }

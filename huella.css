@@ -1,0 +1,65 @@
+.huellap2 {
+    position: relative;
+    width: 100%;
+    height: calc(75vh - 50px);
+    background-color: #ebf7d0;
+    background-size: cover;
+    background-position: center;
+    background-image: url('../proyecto-dise-o-desde-codigo/images/calculatuhuellaback.jpg');
+}
+
+.huellap2-contenedor{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    color:#ebf7d0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.huellap2-contenedor h2{
+    margin: 0;
+    padding: 0;
+    padding-bottom: 30px;    
+    text-align: center;
+    font-family: "Source Sans Pro", sans-serif;
+}
+
+.huellap2-contenedor a {
+    text-decoration: none;
+    color: #ebf7d0;
+    padding: 9px 20px;
+    border: 2px solid #ebf7d0;
+    text-transform: uppercase;
+    transition: all 3s ease-in-out;
+    font-family: "Source Sans Pro", sans-serif;
+}
+
+.huellap2 a:hover{
+    background-color:  hsla(86, 72%, 25%, 0.63);
+    color: #ebf7d0;
+}
+
+.verdeclaro {
+    color:#83bd19;
+    font-size: 90px;
+    line-height: 50px;
+    padding-top: 10px;
+}
+
+.verdeoscuro{
+    color:#446a13;
+    font-size: 60px;
+    line-height: 50px;
+    padding-top: 50px;
+}
+
+.negro{
+    color:#122102;
+    font-size: 80px;
+    line-height: 50px;
+    padding-top: 15px;
+}
